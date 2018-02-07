@@ -1,0 +1,50 @@
+/*
+* @Author: Marte
+* @Date:   2018-02-03 13:59:03
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-02-03 16:15:13
+*/
+
+/* #only {
+    background-color: red;
+}
+
+.demo {
+    background-color: yellow;
+}
+
+.demo1 {
+    color: #f40;
+}
+
+p {
+    font-size: 20px;
+    color :#f40;
+} */
+
+// 直接子元素选择器
+div > p {
+    //background-color: green;
+    font-size: 100px;
+}
+
+/* div {
+    font-size: 50px;
+    //background-color: black;
+    //font-weight: bold;
+    //font-style: italic;
+   // font-family: arial;
+} */
+// 并列选择器
+/* div.demo3{
+    background-color:green;
+} */
+
+//分组选择器 逗号分隔
+
+
+
+
+// * {
+//      font-size: 50px;
+// }

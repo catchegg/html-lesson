@@ -1,0 +1,95 @@
+/*
+* @Author: Marte
+* @Date:   2018-02-07 17:39:00
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-02-07 20:26:41
+*/
+
+/*
+1、边框
+2、文本对齐
+3、行高 1.2em = 1.2倍行距
+4、缩进
+5、删除线 text-decoration :none;可去除del标签删除线
+   下划线 underline 上划线overline
+6、鼠标样式cursor
+7、元素带有默认展示属性display,带有inline的元素含有文字特性
+   inline block inline-block
+8、自定义标签 通配符设置margin padding，权重为0
+9、盒子模型
+10、定位 position: absolute 脱离原来位置定位
+                            相对于最近的有定位的父级定位，如果没有，则相对于文档定位
+    position: relative 保留原来位置定位 相对于自身原来位置定位
+    position:fixed
+11、很多浏览器默认body margin 8px
+*/
+
+ /* 单行文本高度等于容器高度时，文本垂直居中 */
+div {
+    border: 1px solid black;
+    text-align: left;
+    height: 200px;
+    line-height: 30px;
+    text-indent: 2em;                       /* 缩进 */
+}
+
+/* 使用css实现删除线 */
+#price{
+    text-decoration: line-through;
+}
+
+#ahref{
+    color: rgb(0, 0, 238);
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* 伪类选择器 */
+a:hover{
+    background-color: orange;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.redc{
+    border: 10px solid red;
+}
+.greenc{
+    border: 10px solid green;
+}
+.yellowc{
+    border: 10px solid yellow;
+}
+.blackc{
+    border: 10px solid black;
+}
+.orangec{
+    border: 10px solid orange;
+}
+
+.fixed{
+    position: fixed;
+    top:50%;
+    left:50%;
+}
+
+.fixed1{
+    margin-left: -50px;
+}
+.fixed2{
+    margin-left: -180px;
+}
+.fixed3{
+    margin-left: 80px;
+}
+.fixed4{
+    margin-left: -115px;
+    margin-top: 75px;
+}
+.fixed5{
+    margin-left: 15px;
+    margin-top: 75px;
+}

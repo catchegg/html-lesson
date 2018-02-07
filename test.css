@@ -1,0 +1,25 @@
+/*
+* @Author: Marte
+* @Date:   2018-02-03 15:31:05
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-02-03 16:24:36
+*/
+/* p {
+    background-color: green;
+ */}
+/* div {
+    background-color: red;
+    font-size: 20px;
+} */
+
+div>strong {
+    //background-color: red;
+    font-size: 100px;
+}
+
+div > p {
+    //background-color: green;
+    font-size: 100px;
+}
+
+
