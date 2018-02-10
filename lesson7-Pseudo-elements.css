@@ -1,0 +1,61 @@
+/*
+* @Author: Marte
+* @Date:   2018-02-10 21:47:59
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-02-10 22:34:12
+*/
+
+span::before{
+    content: "span前的伪元素";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+span::after{
+    content: "span后的伪元素 伪元素是行级元素";
+}
+
+.wrapper::after{
+    content:"";
+    clear: both;
+    /* display: inline-block; */
+    display: block;
+}
+.wrapper{
+    border: 1px solid green;
+}
+
+/*
+    设置了position: absolute float: left/right ,
+    内部将元素改成inline-block,元素大小由内容决定
+*/
+.wrapper1{
+   /*  position: absolute; */
+    /* float: left; */
+    display: inline-block;
+    border: 2px solid red;
+}
+
+.content{
+    float: left;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#div-id1{
+    width: 50px;
+    height: 100px;
+    background-color: black;
+    color: #fff;
+}
+#div-id2{
+    float: right;
+    width: 50px;
+    height: 100px;
+    background-color: black;
+    color: #fff;
+}

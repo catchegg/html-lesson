@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-02-10 17:16:06
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-02-10 19:27:42
+* @Last Modified time: 2018-02-10 21:59:23
 */
  /* 1、两栏布局 #t1 #t2
     2、垂直方向的margin 父子结合在一起，取更大的值
@@ -19,7 +19,7 @@
        width 按父级，不够往下一行排列，height 溢出
     7、浮动元素产生了浮动流，所有产生了浮动流的元素，块级元
        素看不到他们，产生了BFC的元素和文本类属性(inline)的元素以及文本能看到他们。
-    8、清除浮动流 clear: both
+    8、清除浮动流 clear: both 需块级元素生效
  */
 *{
     margin: 0;
