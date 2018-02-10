@@ -1,0 +1,125 @@
+/*
+* @Author: Marte
+* @Date:   2018-02-10 17:16:06
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-02-10 19:27:42
+*/
+ /* 1、两栏布局 #t1 #t2
+    2、垂直方向的margin 父子结合在一起，取更大的值
+    3、BFC block format context
+       position: absolute
+       display: inline-block
+       float: left/right
+       overflow: hidden 溢出部分隐藏
+    4、区域不共用，box1的右边界加上box2的左边界
+    5、兄弟元素垂直方向margin共用 demo1 demo2
+      demo3 demo4 放在wrapper1中，wrapper1触发BFC。
+      不加结构，用数学方法弥补。直接设置上面元素的margin-bottom。
+    6、content1 增加浮动 float ，排列left 从左到右
+       width 按父级，不够往下一行排列，height 溢出
+    7、浮动元素产生了浮动流，所有产生了浮动流的元素，块级元
+       素看不到他们，产生了BFC的元素和文本类属性(inline)的元素以及文本能看到他们。
+    8、清除浮动流 clear: both
+ */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#t1{
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    opacity: 0.5;
+}
+
+#t2{
+    margin-right: 100px;
+    height: 100px;
+    background-color: green;
+
+}
+
+.wrapper{
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    overflow: hidden;
+
+    /* border-top: 1px solid black; */        /* 增加一个边界 */
+}
+
+.content{
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+}
+
+.box1{
+    margin-right: 100px;
+    background-color: red;
+}
+.box2{
+    margin-left: 100px;
+    background-color: green;
+}
+
+.demo1{
+    background-color: red;
+    margin-bottom: 10px;
+}
+.demo2{
+    background-color: green;
+    margin-top: 10px;
+}
+
+.demo3{
+    background-color: red;
+    margin-bottom: 10px;
+}
+.demo4{
+    background-color: green;
+    margin-top: 20px;
+}
+
+.wrapper1{
+    overflow: hidden;
+}
+
+.wrapper2{
+    width: 200px;
+    height: 300px;
+    border: 1px solid red;
+}
+
+.content1{
+    float: left;
+    color: #fff;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+}
+
+.wrapperBox{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+}
+.box3{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+
+.box4{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
