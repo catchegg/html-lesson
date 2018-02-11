@@ -1,0 +1,49 @@
+/*
+* @Author: Marte
+* @Date:   2018-02-11 13:28:54
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-02-11 14:02:25
+*/
+*{
+    margin: 0;
+    padding: 0;
+    color: #424242;
+    font-family: arial;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+.nav::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.nav{
+    list-style: none;
+}
+
+.nav .list-item{
+    float: left;
+    margin: 0 10px;
+    height: 30px;               /* 容器高度 */
+    line-height: 30px;          /* 内容高度和容器一样，居中 */
+    /* border: 1px solid black; */
+}
+
+.nav .list-item a{
+    padding: 0 5px;
+    color: #f40;
+    font-weight: bold;
+    height: 30px;
+    display: inline-block;       /* a标签行级元素，改成块级属性设置的宽高才有效 */
+    border-radius: 15px;
+}
+
+.nav .list-item a:hover{
+    background-color: #f40;
+    color: #fff;
+}
+

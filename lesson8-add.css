@@ -1,0 +1,22 @@
+/*
+* @Author: Marte
+* @Date:   2018-02-11 14:57:17
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-02-11 15:01:23
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    height: 30px;
+    background-color: black;
+}
+
+.content{
+    margin: 0 auto;
+    width: 1200px;
+    height: 30px;
+    background-color: #f40;
+}

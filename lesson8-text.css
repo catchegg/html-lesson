@@ -1,0 +1,49 @@
+/*
+* @Author: Marte
+* @Date:   2018-02-11 14:04:10
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-02-11 14:50:35
+*/
+/* 块级元素可以嵌套行级元素
+行级元素只能嵌套行级元素
+p标签不能嵌套块级元素
+a标签不能嵌套a标签 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.text1{
+    width: 300px;
+    height: 20px;
+    line-height: 20px;
+    /* border: 1px solid black; */
+
+    /* 单行打点 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text2{
+    width: 300px;
+    height: 40px;
+    line-height: 20px;
+    /* border: 1px solid black; */
+
+    overflow: hidden;
+}
+
+/* css失效后显示文字链接 */
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: #424242;
+    height: 0px;
+    width: 270px;
+    padding-top: 270px;
+    overflow: hidden;
+    border: 1px solid black;
+    background-image: url("aeln.png");
+    background-size: 270px 270px;
+}
